@@ -7,9 +7,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/Savegirlchild/argocd-app.git
+    repoURL: https://github.com/rizqifauzy/learn-argocd.git
     targetRevision: HEAD
-    path: demo/overlays/dev
+    path: dev
   destination: 
     server: https://kubernetes.default.svc
     namespace: default
