@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: nginx-dev
+namePrefix: dev-
+nameSuffix: "-1"
+commonAnnotations:
+  oncallPager: 800-555-1111
+
+resources:
+- ../../bases/
+
+labels:
+- includeSelectors: true
+  pairs:
+    env: Dev
